@@ -1,5 +1,6 @@
 package com.xxf.collection.tree;
 
+//红黑树测试
 public class RedBlackTreeTest {
     public static void main(String[] args) {
         RedBlackTree<String, String> redBlackTree = new RedBlackTree();
