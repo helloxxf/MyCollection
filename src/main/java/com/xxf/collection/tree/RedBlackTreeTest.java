@@ -6,10 +6,11 @@ public class RedBlackTreeTest {
         redBlackTree.put("a", "a");
         redBlackTree.put("b", "zs");
         redBlackTree.put("c", "ls");
-        redBlackTree.put("c", "we");
-        System.out.println(redBlackTree.get("c"));
-
-        System.out.println(redBlackTree.get("b"));
+        redBlackTree.put("d", "we");
         System.out.println(redBlackTree.get("a"));
+        System.out.println(redBlackTree.get("b"));
+        System.out.println(redBlackTree.get("c"));
+        System.out.println(redBlackTree.get("d"));
+        System.out.println(redBlackTree.size());
     }
 }

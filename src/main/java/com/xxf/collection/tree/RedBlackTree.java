@@ -15,11 +15,11 @@ public class RedBlackTree<Key extends Comparable<Key>, Value> {
     //树中元素个数
     private int N;
 
-    //红色链接
-    private static final boolean RED = true;
+    //红色
+    private static final String RED = "red";
 
-    //黑色链接
-    private static final boolean BLACK = true;
+    //黑色
+    private static final String BLACK = "black";
 
     //获取元素个数
     public int size() {
@@ -36,8 +36,8 @@ public class RedBlackTree<Key extends Comparable<Key>, Value> {
         //nil / null 默认黑色
         if (node == null)
             return false;
-        //进来节点全是红色
-        return node.color == RED;
+        //新增进来节点全是红色
+        return RED.equals(node.color);
     }
 
     /**
@@ -140,19 +140,19 @@ public class RedBlackTree<Key extends Comparable<Key>, Value> {
         }
 
         //右旋， 当前节点的左节点为红色并且左节点的左节点也为红色
-        if (isRed(h.left) == RED && isRed(h.left.left)) {
+        if (isRed(h.left) && isRed(h.left.left)) {
            h = rolateRight(h);
         }
 
         //颜色反转： 当前节点的左节点为红色，右节点为红色，则当前节点变为红色， 左右子节点变为黑色
-        if (isRed(h.left) == RED && isRed(h.right)) {
+        if (isRed(h.left) && isRed(h.right)) {
             flipColor(h);
         }
         return h;
     }
 
     /**
-     *
+     * 遍历树获取值
      * @param key
      * @return
      */
@@ -161,7 +161,7 @@ public class RedBlackTree<Key extends Comparable<Key>, Value> {
     }
 
     /**
-     *
+     * 指定节点获取值
      * @param h
      * @param key
      * @return
@@ -199,9 +199,9 @@ public class RedBlackTree<Key extends Comparable<Key>, Value> {
         private Node right;
 
         //颜色
-        private boolean color;
+        private String color;
 
-        public Node(Key key, Value value, Node left, Node right, boolean color) {
+        public Node(Key key, Value value, Node left, Node right, String color) {
             this.key = key;
             this.value = value;
             this.left = left;
