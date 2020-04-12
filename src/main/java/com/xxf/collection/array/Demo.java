@@ -1,4 +1,4 @@
-package com.xxf.hashmap.array;
+package com.xxf.collection.array;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

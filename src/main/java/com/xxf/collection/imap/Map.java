@@ -1,4 +1,4 @@
-package com.xxf.hashmap.imap;
+package com.xxf.collection.imap;
 
 public interface Map<K, V> {
 

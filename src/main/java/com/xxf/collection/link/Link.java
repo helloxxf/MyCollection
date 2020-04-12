@@ -1,4 +1,4 @@
-package com.xxf.hashmap.link;
+package com.xxf.collection.link;
 
 //链表节点
 public class Link {

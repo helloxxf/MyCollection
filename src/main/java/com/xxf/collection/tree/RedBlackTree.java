@@ -1,4 +1,4 @@
-package com.xxf.hashmap.tree;
+package com.xxf.collection.tree;
 
 /**
  * 红黑树

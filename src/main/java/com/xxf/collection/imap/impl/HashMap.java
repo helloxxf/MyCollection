@@ -1,6 +1,6 @@
-package com.xxf.hashmap.imap.impl;
+package com.xxf.collection.imap.impl;
 
-import com.xxf.hashmap.imap.Map;
+import com.xxf.collection.imap.Map;
 
 public class HashMap<K, V> implements Map<K, V> {
 

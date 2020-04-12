@@ -1,6 +1,6 @@
-package com.xxf.hashmap;
+package com.xxf.collection;
 
-import com.xxf.hashmap.imap.impl.HashMap;
+import com.xxf.collection.imap.impl.HashMap;
 
 public class HashMap7Test {
     public static void main(String[] args) {
